@@ -7,7 +7,7 @@ from dronekit import connect, VehicleMode, LocationGlobal, LocationGlobalRelativ
 from pymavlink import mavutil
 
 # DRONEKIT
-vehicle = connect('udp:127.0.0.1:14550', wait_ready=True)
+vehicle = connect('/dev/ttyAMA0', wait_ready=True)
 
 # FUNCTIONS
 def arm():
